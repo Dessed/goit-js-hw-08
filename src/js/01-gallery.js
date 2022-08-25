@@ -26,5 +26,7 @@ function onGallerySimpleLightbox (evt) {
     captionDelay: 250,
     navText: ['←','→']
     });
+
+    lightbox.on('closed.simplelightbox', () => lightbox.destroy());
 };
 
